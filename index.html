@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+  <head>
+    <meta charset="utf-8">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Enter Player names....</h2>
+    <form name="form1" action="play.html" method="get">
+      <b>Player 1 : &nbsp</b> <input type="text" id = "name"  name ="n" required><br/> <br/>
+      <b>Player 2 : &nbsp</b> <input type="text" id = "name1"  name ="n1" required><br/> <br/>
+      <button type="submit" class = "button1" onclick="myfunction()"> PLAY</button>
+    </form>
+  <script>
+    function myfunction(){
+     var p1 = document.getElementById("name").value;
+     var p2 = document.getElementById("name1").value;
+     localStorage.setItem("player1",p1);
+     localStorage.setItem("player2",p2);
+    }
+  </script>
+  </body>
+</html>

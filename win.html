@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="win.css">
+  </head>
+  <body>
+    <div class="container">
+     <img src="fireworks.gif" class="responsive" width="600" height="1000">
+    <div class="centered">
+    <h1>Congratulations</h1>
+    <h1 id = "player" style="text-align:center"></h1>
+    </div>
+</div>
+  </body>
+</html>
+<script>
+  var w1 = localStorage.getItem("winner1");
+  var w2 = localStorage.getItem("winner2");
+  var p1 = localStorage.getItem("player1");
+  var p2 = localStorage.getItem("player2");
+  
+  if(w1>w2){
+    document.getElementById("player").innerHTML = p1;
+  }
+  else if(w1==w2){
+    document.getElementById("player").innerHTML = "To Both -- Match Draw";
+  }
+  else{
+    document.getElementById("player").innerHTML = p2;
+  }
+  console.log(w1+p1);
+  console.log(w2+p2);
+</script>
