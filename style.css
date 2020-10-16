@@ -3,7 +3,8 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95.5vh;
+    height: 100vh;
+    width:100%
     position: relative;
 }
 h1{
