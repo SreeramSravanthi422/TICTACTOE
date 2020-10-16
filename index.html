@@ -9,11 +9,11 @@
   <body>
     <h1>Tic-Tac-Toe</h1>
     <h2>Enter Player names....</h2>
-    <form name="form1" action="play.html" method="post">
+    <div id ="form">
       <b>Player 1 : &nbsp</b> <input type="text" id = "name"  name ="n" required><br/> <br/>
       <b>Player 2 : &nbsp</b> <input type="text" id = "name1"  name ="n1" required><br/> <br/>
-      <button type="submit" class = "button1" onclick="myfunction()"> PLAY</button>
-    </form>
+      <a href="play.html" role="button" class = "button1" onclick="myfunction()">Play</a>
+    </div>
   <script>
     function myfunction(){
      var p1 = document.getElementById("name").value;
